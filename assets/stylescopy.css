@@ -1,0 +1,63 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cinema {
+  width: 65%;
+  height: 700px;
+  margin: auto;
+  background-image: url(./images/bgtv.png);
+  background-repeat: no-repeat;
+}
+
+.tv {
+  width: 650px;
+  align-items: center;
+}
+
+.motiondiv {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 45px;
+  height: 400px;
+  /* background-color: pink; */
+}
+
+.motiondivout {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 45px;
+  height: 400px;
+  background-color: rgb(5, 5, 5);
+}
+
+.buttons {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 25px;
+  display: flex;
+  justify-content: right;
+}
+
+.controls {
+  width: 25px;
+  height: 25px;
+}
+
+#tvoff {
+  visibility: hidden;
+}
+
+.tvenvelop {
+  height: 472px;
+  width: 80%;
+  margin: auto;
+}
+
+.roundbtn {
+  border-radius: 90px;
+  background-image: url(./images/power.png);
+  height: inherit;
+  color: white;
+}

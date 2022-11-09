@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue Mastery</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="./assets/stylescopy.css" />
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app" class="cinema">
+      <p>The New Smart JVC</p>
+          <div v-if="!tvScreenOn" class="motiondivout">
+            <!-- <img src="./assets/images/noah-or-mandela.gif" id="tvshow" class="tv"> -->
+          </div>
+          <div class="motiondiv" v-else="tvScreenOn">
+            <img :src="channel" id="tvshow" class="tv">
+          </div>
+          <div class="buttons">
+            <button v-on:click="channelDown" class="roundbtn">▼</button>&nbsp; &nbsp;
+            <button v-on:click="channelUp" class="roundbtn">▲</button>&nbsp; &nbsp;
+            <button v-on:click="powerOn" class="roundbtn">🔘</button>
+          </div>
+    </div>
+
+    <!-- Import App -->
+    <script src="./maincopy.js"></script>
+
+    <!-- Mount App -->
+    <script>
+      const mountedApp = app.mount('#app')
+    </script>
+  </body>
+</html>
